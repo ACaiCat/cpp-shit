@@ -1,3 +1,19 @@
+/*
+一、根据以下的主函数，写出相关的类。
+主函数如下：
+int main()
+{
+    clock clo1;
+    cout<<"CLOCK A:"<<endl;
+    clo1.set(2,30,0); //设置时钟的当前时间
+    for (int i=0;i<10;i++)
+    {
+        clo1.tick(); //时钟增加1秒
+        clo1.show(); //第一次循环打印输出：2:30:1
+    }
+}
+*/
+
 #include <iostream>
 
 class Clock

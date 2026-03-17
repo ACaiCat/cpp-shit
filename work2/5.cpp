@@ -1,3 +1,7 @@
+/*
+五、请编写一个程序用于判断两个矩形的拓扑关系（相离、相交、包含）。
+*/
+
 #include <iostream>
 #include <vector>
 

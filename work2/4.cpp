@@ -1,3 +1,12 @@
+/*
+四、某多项式的形式为 ax^m+bx^n+c，请编写程序求多项式的值。
+输入：x, a, b, c,m,n的值
+输出：多项式的值
+如：
+输入：x=1, a=2, b=1, c=0,m=0,n=0
+输出：3
+*/
+
 #include <iostream>
 #include <cmath>
 

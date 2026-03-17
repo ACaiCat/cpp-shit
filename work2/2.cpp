@@ -1,3 +1,7 @@
+/*
+二、email地址的格式：账户名+@+服务器域名，请编写一个类表示email地址
+*/
+
 #include <iostream>
 #include <string>
 
