@@ -46,3 +46,4 @@ CMakeCache.txt
 build/
 dist/
 .vscode
+*.zip
