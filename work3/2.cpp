@@ -22,20 +22,23 @@ int main()
 
 #include <iostream>
 
-
 // 赛这里也可以，C#写习惯了还是塞在类里面好看一些
 // static int count = 0;
 
-class Foo{
+class Foo
+{
 private:
     // C++ 17的语法，其实可以写类外面的
     inline static int count_ = 0;
+
 public:
-    Foo() {
+    Foo()
+    {
         count_++;
         std::cout << "The default constructor has been called: " << count_ << std::endl;
     }
-    Foo(const Foo& other) {
+    Foo(const Foo &other)
+    {
         count_++;
         std::cout << "The copy constructor has been called: " << count_ << std::endl;
     }
@@ -48,13 +51,13 @@ Foo method(Foo obj)
     return obj;
 }
 
-void method2(Foo& obj)
+void method2(Foo &obj)
 {
 }
 
 int main()
 {
-    // 默认构建函数被调用  
+    // 默认构建函数被调用
     // count_ = 1
     Foo obj;
 
