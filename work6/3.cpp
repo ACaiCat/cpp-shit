@@ -19,7 +19,7 @@ private:
 public:
     Time(int hours, int minutes, int seconds) : seconds_(seconds), minutes_(minutes), hours_(hours) {}
 
-    std::string toTimeString()
+    std::string toString()
     {
         std::ostringstream oss;
 
@@ -43,7 +43,7 @@ public:
     DateTime(int years, int mounths, int days, int hours, int minutes, int seconds)
         : years_(years), mounths_(mounths), days_(days), Time(hours, minutes, seconds) {}
 
-    std::string toDateTimeString()
+    std::string toString()
     {
         std::ostringstream oss;
 
@@ -52,7 +52,7 @@ public:
         oss << std::setw(2) << mounths_ << "-";
         oss << std::setw(2) << days_ << " ";
 
-        oss << toTimeString();
+        oss << Time::toString();
 
         return oss.str();
     }
@@ -61,5 +61,5 @@ public:
 int main()
 {
     auto datetime = DateTime(2026, 4, 18, 18, 42, 15);
-    std::cout << datetime.toDateTimeString();
+    std::cout << datetime.toString();
 }
