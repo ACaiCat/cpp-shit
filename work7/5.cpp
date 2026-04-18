@@ -37,7 +37,7 @@ public:
     Rectangle operator++(int)
     {
         auto temp = *this;
-        (*this)++;
+        ++(*this);
         return temp;
     }
 };
